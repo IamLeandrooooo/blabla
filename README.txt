@@ -82,3 +82,4 @@ while true; do
     sleep 1  # Sleep to avoid overwhelming the system
 done
 
+https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
