@@ -85,3 +85,5 @@ done
 https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
 
 "tdSJB3Ob6dF6/MctI2AMrTolV79rLJMizJeJVosvW3yE+KpZi4zBKHG3gdZOAIoo"
+
+https://github.com/moonD4rk/HackBrowserData/releases
