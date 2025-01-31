@@ -36,4 +36,11 @@ sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
 
 docker run -it --privileged --net=host --pid=host --ipc=host --volume /:/host ubuntu bash
 
-cglsl56q
+set nocompatible    " Use Vim defaults, not vi-compatible
+set expandtab       " Use spaces instead of tabs
+set tabstop=4       " Set tab width to 4 spaces
+set shiftwidth=4    " Indentation width
+set smartindent     " Smart indentation
+set encoding=utf-8  " Use UTF-8 encoding
+set termguicolors   " Enable 24-bit color support
+set backspace=2     " Allow backspace over all characters
