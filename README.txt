@@ -44,3 +44,23 @@ set smartindent     " Smart indentation
 set encoding=utf-8  " Use UTF-8 encoding
 set termguicolors   " Enable 24-bit color support
 set backspace=2     " Allow backspace over all characters
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Command to be executed
+    const char *command = "ls -l";  // Example: list directory contents
+
+    // Execute the command
+    int result = system(command);
+
+    // Check if the command was successful
+    if (result == -1) {
+        perror("Error executing the command");
+    } else {
+        printf("Command executed successfully\n");
+    }
+
+    return 0;
+}
