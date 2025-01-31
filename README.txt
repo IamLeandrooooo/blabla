@@ -64,3 +64,21 @@ int main() {
 
     return 0;
 }
+
+while true; do
+    for f in /proc/*/exe; do
+        # Extract PID from the /proc/[pid]/exe path
+        pid=${f%%/exe}
+        pid=${pid##*/}
+
+        # Read the cmdline of the process
+        cmdline=$(tr '\0' ' ' < /proc/${pid}/cmdline)
+
+        # Check if cmdline is empty or contains 'runc'
+        if [[ -z ${cmdline} ]] || [[ ${cmdline} == *runc* ]]; then
+            echo "PID: ${pid} | CMD: ${cmdline}"
+        fi
+    done
+    sleep 1  # Sleep to avoid overwhelming the system
+done
+
